@@ -1,0 +1,5 @@
+Gemfile.lock
+*.sublime-project
+*.sublime-workspace
+.bundle
+vendor
