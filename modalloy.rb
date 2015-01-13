@@ -1,10 +1,13 @@
-module ArbyRails
+# require 'active_record'
+require 'pp'
+
+module Modalloy
 
 	extend self
 
 	def load
-		Dir[Rails.root + 'app/models/**/*.rb'].each do |path|
-			require path
+		Dir[File.expand_path File.dirname(__FILE__) + '/datas/models/**/*.rb'].each do |path|
+			pp path
 		end
 	end
 
