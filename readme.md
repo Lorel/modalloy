@@ -31,4 +31,4 @@ The execution print Alloy model on stdout
 
 This project is based on the study [Bounded Verification of Ruby on Rails Data Models](http://www.cs.ucsb.edu/~bultan/publications/issta11.pdf).
 
-It tries to implement this study by using [αRby](people.csail.mit.edu/aleks/website/papers/abz14-arby.pdf)(http://people.csail.mit.edu/aleks/website/arby/).
+It tries to implement this study by using [αRby](people.csail.mit.edu/aleks/website/papers/abz14-arby.pdf) (http://people.csail.mit.edu/aleks/website/arby/).
