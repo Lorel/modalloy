@@ -39,9 +39,6 @@ class App
 	end
 end
 
-
-
-# load "app.rb"
-# a = App.new
-# a.test
-# Modalloy::ArbyModel::translate_model(a.processor.relations, a.processor.as)
+a = App.new
+a.test
+Modalloy::ArbyModel::translate_model(a.processor.relations, a.processor.as)

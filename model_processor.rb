@@ -26,17 +26,17 @@ module Modalloy
 
 					when sexp.is_a?(Sexp) && [ :has_one, :has_many, :belongs_to, :has_and_belongs_to_many ].include?(sexp[2]) # looking for one of this relations
 
-						pp sexp.clone
+						# pp sexp.clone
 						
 						# handle :as case
 						if sexp[4] && sexp[4].include?( s(:lit, :as) )
-							puts "AS"
+							# puts "AS"
 							@as[sexp[4][sexp[4].find_index( s(:lit, :as) ) + 1][1]] = sexp[3][1].to_s.singularize.to_sym 
 						end
 
 						# handle :polymorphic case
 						if sexp[4] && sexp[4].include?( s(:lit, :polymorphic) )
-							puts "POLYMORPHIC"
+							# puts "POLYMORPHIC"
 						end
 
 						begin
@@ -53,8 +53,8 @@ module Modalloy
 
 						rescue NameError, RuntimeError => e
 							# error ignored ATM, need to be fixed
-							puts e.message  
-							puts e.backtrace.inspect
+							# puts e.message  
+							# puts e.backtrace.inspect
 							options = {}
 						end
 						add_relation(klass, sexp[2], sexp[3][1], options)
