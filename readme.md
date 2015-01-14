@@ -19,7 +19,7 @@ Run analyze of model from FatFreeCRM
 $ bundle exec ruby app.rb
 ```
 
-Run analyze of model from FatFreeCRM
+Run analyze of model from a Rails app
 
 ```
 $ bundle exec ruby app.rb relative/path/to/models/directory
